@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./img/sky.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.sun {
+    width: 100px;
+    height: 100px;
+    background-image: url(./img/suraj.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    animation: moveSun 30s linear infinite;
+}
+@keyframes moveSun{
+    from {
+        transform: translateX(0) ;
+    }
+    to {
+        transform: translateX(-100vw);
+    }
+
+}
+
+.city {
+    width: 4000px;
+    height: 200px;
+    background-image: url(./img/city.png);
+    position: absolute;
+    bottom: 200px;
+    animation: moveCity 20s linear infinite;
+}
+
+@keyframes moveCity {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-2500px);
+    }
+}
+
+.flag{
+    width: 57px;
+    height: 64px;
+    background-image: url(./img/Tiranga1.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    bottom: 170px;
+    right: 508px;
+    z-index: 1;
+}
+
+.car{
+    width: 29rem;
+    height: 11rem;
+    background-image: url(./img/car.png);
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    bottom: 4rem;
+    left: 455px;
+    z-index: 1;
+}
+.wheel{
+    width: 82px;
+    height: 83px;
+    z-index: 1;
+}
+#wheel1{
+    background-image: url(./img/wheel.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    bottom: 62px;
+    left: 495px;
+    animation: wheel1Move 1s linear infinite ;
+}
+@keyframes wheel1Move {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+#wheel2{
+    background-image: url(./img/wheel.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    bottom: 62px;
+    right: 504px;
+    animation: wheel2Move 1s linear infinite ;
+}
+@keyframes wheel2Move {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.road {
+    width: 4000px;
+    height: 200px;
+    background-image: url(./img/road.jpeg);
+    position: absolute;
+    bottom: 0px;
+    animation: moveRoad 5s linear infinite;
+}
+
+
+@keyframes moveRoad {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-2500px);
+    }
+}

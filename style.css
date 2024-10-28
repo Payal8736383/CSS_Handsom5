@@ -1,0 +1,124 @@
+body {
+    background-color: yellow;
+}
+
+h1 {
+    text-align: center;
+}
+
+ol{
+    width: fit-content;
+    margin: auto;
+}
+.box-1{
+    display: flex;
+    gap: 5rem;
+    
+}
+ .box1{
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem 0rem 0rem 2rem;
+    background-color: rgb(29, 61, 73);
+    animation-name: boxNew;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function:ease-in-out;
+ }
+
+@keyframes boxNew {
+    from{
+
+        transform: skew(-20deg, 0);
+    }
+    to{
+        transform: skew(20deg, 0);
+    }
+}
+
+.box2{
+    width: 5rem;
+    height: 5rem;
+    margin: 2rem 0rem 0rem 2rem;
+    background-color: rgb(56, 30, 82);
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: boxNew1 2s ease-out infinite alternate ;
+}
+
+@keyframes boxNew1 {
+    from{
+        transform: skew(-10deg, -20deg);
+    }
+    to{
+        transform: skew(10deg,20deg);
+    }
+}
+
+.box3{
+    width: 5rem;
+    height: 5rem;
+    margin: 2rem 0rem 0rem 2rem;
+    background-color: rgb(29, 61, 73);
+    animation: boxNew2 2s ease-out infinite ;
+}
+
+@keyframes boxNew2{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.box4{
+    width: 5rem;
+    height: 5rem;
+    margin: 2rem 0rem 0rem 2rem;
+}
+#box--1{
+        background-color:rgb(56, 30, 82) ;
+        animation: boxNew3 2s ease-out infinite alternate;
+}
+@keyframes boxNew3 {
+    from{
+        transform: scaleY(1);
+    }
+    to{
+        transform: scaleY(0.5);
+    }
+}
+#box--2{
+        background-color:rgb(83, 67, 36) ;
+        animation: boxNew4 2s ease-in infinite alternate;
+}
+@keyframes boxNew4 {
+    from{
+        transform: scaleX(1);
+    }
+    to{
+        transform: scaleX(0.5);
+    }
+}
+#box--3{
+        background-color:rgb(26, 83, 31) ;
+        animation: boxNew5 2s ease-in infinite alternate;
+}
+@keyframes boxNew5 {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(180deg);
+    }
+}
+.link{
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+   

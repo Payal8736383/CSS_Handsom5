@@ -1,0 +1,37 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section {
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boxxx {
+    width: 6rem;
+    height: 6rem;
+    background-color: green;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.boxxx {
+    transition: all 3s ease-in-out 0.25s;
+}
+
+.boxx1:hover {
+    width: 300px;
+}
+
+#boxx2:hover {
+    width: 300px;
+    height: 350px;
+}
+
+a{
+    font-size: 2rem;
+}
